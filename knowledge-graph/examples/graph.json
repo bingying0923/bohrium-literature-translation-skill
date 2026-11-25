@@ -1,0 +1,138 @@
+{
+ "nodes": [
+  {
+   "id": "n001",
+   "type": "method",
+   "surface": "The sensor",
+   "canonical": "The sensor",
+   "aliases": [
+    "The sensor"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "The sensor detected lead ions in all 36 samples within 12 min.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n002",
+   "type": "metric",
+   "surface": "Recovery",
+   "canonical": "Recovery",
+   "aliases": [
+    "Recovery"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "Recovery ranged from 92% to 108% across the three tested matrices.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n003",
+   "type": "finding",
+   "surface": "ranged from 92% to 108% across the three tested matrices",
+   "canonical": "ranged from 92% to 108% across the three tested matrices",
+   "aliases": [
+    "ranged from 92% to 108% across the three tested matrices"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "Recovery ranged from 92% to 108% across the three tested matrices.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n004",
+   "type": "method",
+   "surface": "colorimetric reference method",
+   "canonical": "colorimetric reference method",
+   "aliases": [
+    "colorimetric reference method"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n005",
+   "type": "metric",
+   "surface": "limit of detection",
+   "canonical": "limit of detection",
+   "aliases": [
+    "limit of detection"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n006",
+   "type": "task",
+   "surface": "detection",
+   "canonical": "detection",
+   "aliases": [
+    "detection"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n007",
+   "type": "finding",
+   "surface": "was lower than that of the colorimetric reference method",
+   "canonical": "was lower than that of the colorimetric reference method",
+   "aliases": [
+    "was lower than that of the colorimetric reference method"
+   ],
+   "anchor": "p002",
+   "page": 1,
+   "evidence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+   "ambiguous": false,
+   "merge_reason": ""
+  },
+  {
+   "id": "n008",
+   "type": "method",
+   "surface": "that the method",
+   "canonical": "that the method",
+   "aliases": [
+    "that the method"
+   ],
+   "anchor": "p004",
+   "page": 1,
+   "evidence": "These results may suggest that the method could be applied in resource-limited settings.",
+   "ambiguous": false,
+   "merge_reason": ""
+  }
+ ],
+ "edges": [
+  {
+   "id": "e001",
+   "source": "n002",
+   "target": "n003",
+   "type": "reports",
+   "direction": "forward",
+   "evidence": "Recovery ranged from 92% to 108% across the three tested matrices.",
+   "anchor": "p002",
+   "strength": "direct"
+  },
+  {
+   "id": "e002",
+   "source": "n005",
+   "target": "n004",
+   "type": "outperforms",
+   "direction": "forward",
+   "evidence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+   "anchor": "p002",
+   "strength": "direct"
+  }
+ ]
+}

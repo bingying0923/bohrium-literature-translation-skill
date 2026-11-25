@@ -1,0 +1,39 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：断言拆解、证据绑定、来源元数据、质量检查与导出
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/nanopub_schema.md
+    kind: rule
+    description: 断言/证据/来源字段定义、状态机与五类质量判定口径
+  - path: scripts/decompose_claims.py
+    kind: script
+    runtime: python3
+    description: 句子与子句拆分、断言分类（finding/method/limitation/claim）、限定词与条件抽取
+  - path: scripts/bind_evidence.py
+    kind: script
+    runtime: python3
+    description: 为每条断言匹配最小充分证据句并打分，区分 direct/inferred/weak
+  - path: scripts/validate_nanopub.py
+    kind: script
+    runtime: python3
+    description: 过宽/证据不足/数值不一致/重复/主体/来源缺失 六项检查
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json + nanopubs.json
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_paper.md
+    kind: example
+    description: 最小示例论文片段（自拟，非正式案例）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

@@ -1,0 +1,75 @@
+{
+ "steps": [
+  {
+   "n": 1,
+   "text": "过滤水样（",
+   "input": "原始水样",
+   "output": "滤液",
+   "condition": "0.45 µm 滤膜）"
+  },
+  {
+   "n": 2,
+   "text": "富集铅离子（",
+   "input": "滤液",
+   "output": "富集膜",
+   "condition": "5 min 孵育）"
+  },
+  {
+   "n": 3,
+   "text": "拍照记录显色（",
+   "input": "富集膜",
+   "output": "RGB 图像",
+   "condition": "固定光照）"
+  },
+  {
+   "n": 4,
+   "text": "拟合标准曲线（",
+   "input": "标准系列",
+   "output": "曲线参数",
+   "condition": "线性拟合）"
+  }
+ ],
+ "params": [
+  {
+   "name": "incubation_time",
+   "value": "5",
+   "unit": "min",
+   "target": "富集步骤",
+   "source": "config",
+   "verified": true
+  },
+  {
+   "name": "membrane_pore",
+   "value": "0.45",
+   "unit": "µm",
+   "target": "过滤步骤",
+   "source": "config",
+   "verified": true
+  },
+  {
+   "name": "camera_gain",
+   "value": "1.2",
+   "unit": "-",
+   "target": "显色拍照",
+   "source": "config",
+   "verified": true
+  }
+ ],
+ "datasets": [
+  {
+   "name": "城市水样",
+   "version": "v1.0",
+   "n": 36,
+   "split": "24/6/6",
+   "preprocess": "0.45 µm 过滤",
+   "use": "训练/验证/测试"
+  }
+ ],
+ "reproduce": {
+  "code_version": "git-abc123",
+  "env": "python 3.11, numpy 2.0",
+  "command": "python run.py --config config.json",
+  "seed": "42",
+  "repeats": "3"
+ }
+}

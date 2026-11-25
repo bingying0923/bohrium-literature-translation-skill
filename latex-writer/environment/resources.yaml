@@ -1,0 +1,44 @@
+﻿resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：组装→静态检查→编译→报告
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/latex_rules.md
+    kind: rule
+    description: 转义、结构、表格、公式、引用与编译规则
+  - path: scripts/build_tex.py
+    kind: script
+    runtime: python3
+    description: 结构化组装 .tex：转义、章节、公式、三线表、label
+  - path: scripts/lint_tex.py
+    kind: script
+    runtime: python3
+    description: 括号/环境/结构/引用/标签/表格列数/非ASCII/宏包重复 八项检查
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 可选实测编译（探测 latexmk/pdflatex/xelatex）+ 合成报告
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: templates/article.tex
+    kind: template
+    description: 最小可用导言区模板
+  - path: examples/demo_doc.json
+    kind: example
+    description: 最小示例内容
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []
+  external_tools:
+    - name: latexmk
+      optional: true
+      note: 首选；缺失时退化为 pdflatex/xelatex 两遍
+    - name: pdflatex
+      optional: true

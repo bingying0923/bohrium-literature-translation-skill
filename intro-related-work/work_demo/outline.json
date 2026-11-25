@@ -1,0 +1,59 @@
+{
+ "background": {
+  "points": [
+   "饮用水中铅污染在全球范围内仍是公共卫生问题",
+   "实验室方法灵敏度高但依赖集中设施",
+   "现场筛查需要低成本、可携带的检测手段"
+  ],
+  "must_cite": [
+   "smith2020",
+   "wang2019",
+   "chen2021"
+  ]
+ },
+ "related_work": [
+  {
+   "group": "optical",
+   "refs": [
+    "smith2020",
+    "wang2019"
+   ],
+   "limitation": "该组共同限制：待写"
+  },
+  {
+   "group": "lab",
+   "refs": [
+    "chen2021"
+   ],
+   "limitation": "该组共同限制：待写"
+  },
+  {
+   "group": "field",
+   "refs": [
+    "garcia2022"
+   ],
+   "limitation": "该组共同限制：待写"
+  }
+ ],
+ "gap": {
+  "text": "由上述各组共同限制推出：待写",
+  "refs": [
+   "smith2020",
+   "wang2019"
+  ]
+ },
+ "contributions": [
+  {
+   "text": "提出一种低成本比色传感器，用螯合膜富集铅离子",
+   "evidence": "Fig. 2"
+  },
+  {
+   "text": "检出限达到 0.8 µg/L，低于此前报道的比色法",
+   "evidence": "Table 2"
+  },
+  {
+   "text": "在三个城市 36 份水样上验证，回收率 92%–108%",
+   "evidence": "Fig. 3"
+  }
+ ]
+}

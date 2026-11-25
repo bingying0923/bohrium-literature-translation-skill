@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "methods-experiments-writer result.json",
+  "type": "object",
+  "required": ["case_id", "status", "steps", "params", "datasets", "reproduce", "checks", "issues"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "steps": {"type": "array", "items": {"type": "object", "required": ["n", "text"]}},
+    "params": {"type": "array", "items": {"type": "object", "required": ["name", "value"]}},
+    "datasets": {"type": "array", "items": {"type": "object"}},
+    "reproduce": {"type": "object"},
+    "checks": {"type": "object"},
+    "issues": {"type": "array", "items": {"type": "object"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

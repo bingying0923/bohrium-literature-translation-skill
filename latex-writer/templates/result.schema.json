@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "latex-writer-compiler result.json",
+  "type": "object",
+  "required": ["case_id", "status", "deliverable", "lint", "build", "unresolved"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "deliverable": {"type": "object"},
+    "lint": {
+      "type": "object",
+      "required": ["ok", "errors", "issues"],
+      "properties": {
+        "ok": {"type": "boolean"},
+        "errors": {"type": "integer"},
+        "warnings": {"type": "integer"},
+        "issues": {"type": "array", "items": {"type": "object", "properties": {
+          "line": {"type": "integer"}, "level": {"enum": ["error", "warning"]}, "issue": {"type": "string"}}}}
+      }
+    },
+    "build": {"type": "object"},
+    "unresolved": {"type": "array", "items": {"type": "object"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

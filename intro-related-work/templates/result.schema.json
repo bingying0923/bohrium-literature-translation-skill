@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "intro-related-work-writer result.json",
+  "type": "object",
+  "required": ["case_id", "status", "outline", "intro", "citation_map", "checks", "issues"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "outline": {"type": "object"},
+    "intro": {"type": "object", "properties": {"paragraphs": {"type": "array", "items": {"type": "object", "required": ["id", "role", "text"]}}}},
+    "citation_map": {"type": "array", "items": {"type": "object"}},
+    "checks": {"type": "object"},
+    "issues": {"type": "array", "items": {"type": "object"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

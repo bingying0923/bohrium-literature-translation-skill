@@ -1,0 +1,68 @@
+{
+ "entities": [
+  {
+   "id": "n001",
+   "type": "method",
+   "surface": "The sensor",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "The sensor detected lead ions in all 36 samples within 12 min."
+  },
+  {
+   "id": "n002",
+   "type": "metric",
+   "surface": "Recovery",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "Recovery ranged from 92% to 108% across the three tested matrices."
+  },
+  {
+   "id": "n003",
+   "type": "finding",
+   "surface": "ranged from 92% to 108% across the three tested matrices",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "Recovery ranged from 92% to 108% across the three tested matrices."
+  },
+  {
+   "id": "n004",
+   "type": "method",
+   "surface": "colorimetric reference method",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method."
+  },
+  {
+   "id": "n005",
+   "type": "metric",
+   "surface": "limit of detection",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method."
+  },
+  {
+   "id": "n006",
+   "type": "task",
+   "surface": "detection",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method."
+  },
+  {
+   "id": "n007",
+   "type": "finding",
+   "surface": "was lower than that of the colorimetric reference method",
+   "anchor": "p002",
+   "page": 1,
+   "sentence": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method."
+  },
+  {
+   "id": "n008",
+   "type": "method",
+   "surface": "that the method",
+   "anchor": "p004",
+   "page": 1,
+   "sentence": "These results may suggest that the method could be applied in resource-limited settings."
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "checks": {
+  "steps": {
+   "ok": true,
+   "issues": []
+  },
+  "params": {
+   "ok": true,
+   "issues": []
+  },
+  "numbers": {
+   "ok": true,
+   "issues": []
+  },
+  "datasets": {
+   "ok": true,
+   "issues": []
+  },
+  "reproduce": {
+   "ok": true,
+   "issues": []
+  },
+  "baseline": {
+   "ok": false,
+   "issues": [
+    {
+     "issue": "未描述对照/基线对象"
+    }
+   ]
+  },
+  "limitations": {
+   "ok": true,
+   "issues": []
+  }
+ },
+ "blocking": 0,
+ "ok": true
+}

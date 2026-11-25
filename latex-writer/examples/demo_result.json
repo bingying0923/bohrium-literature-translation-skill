@@ -1,0 +1,30 @@
+{
+ "case_id": "demo-latex-001",
+ "status": "success",
+ "deliverable": {
+  "path": "main.tex",
+  "kind": "latex"
+ },
+ "lint": {
+  "ok": true,
+  "errors": 0,
+  "warnings": 0,
+  "issues": []
+ },
+ "build": {
+  "available": false,
+  "engine": null,
+  "note": "本机未安装 TeX 发行版，仅做静态检查；交付前需在目标模板环境实测编译"
+ },
+ "unresolved": [],
+ "artifacts": [
+  {
+   "path": "main.tex",
+   "kind": "latex"
+  },
+  {
+   "path": "build_report.md",
+   "kind": "markdown"
+  }
+ ]
+}

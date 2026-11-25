@@ -1,0 +1,13 @@
+﻿{
+  "title": "A low-cost colorimetric sensor for lead detection",
+  "authors": ["Bing Ying", "Demo Author"],
+  "abstract": "We report a portable colorimetric assay with a limit of detection of 0.8 ug/L.",
+  "sections": [
+    {"heading": "Introduction", "label": "sec:intro", "text": "Lead contamination remains a public health problem & requires field-ready tools (see Section~\\ref{sec:method})."},
+    {"heading": "Method", "label": "sec:method", "text": "Samples were filtered and passed through a chelating membrane.",
+     "equations": ["L = 3\\sigma / S"],
+     "table": {"caption": "Recovery of spiked samples", "rows": [["Matrix", "Recovery (%)"], ["Tap water", "92"], ["River water", "104"]]}}
+  ],
+  "bibliography": "refs",
+  "bibstyle": "plain"
+}

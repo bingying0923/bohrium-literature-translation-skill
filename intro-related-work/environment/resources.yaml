@@ -1,0 +1,41 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：4 段式结构、写作规则、六项校验与产出
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/writing_rules.md
+    kind: rule
+    description: 引言/相关工作的句式规则、禁用语、分组维度与贡献写法
+  - path: scripts/build_outline.py
+    kind: script
+    runtime: python3
+    description: 从事实底稿与文献清单生成背景/相关工作/空白/贡献 四段式骨架
+  - path: scripts/check_intro.py
+    kind: script
+    runtime: python3
+    description: 引用覆盖/空转句/分组维度/空白推导/贡献证据/引用有效性 六项校验
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json + intro.md + citation_map.csv
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_facts.json
+    kind: example
+    description: 最小示例的事实底稿
+  - path: examples/demo_refs.json
+    kind: example
+    description: 最小示例的文献清单
+  - path: examples/demo_intro.json
+    kind: example
+    description: 最小示例的引言稿（示意）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

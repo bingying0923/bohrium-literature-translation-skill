@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "literature-knowledge-graph result.json",
+  "type": "object",
+  "required": ["case_id", "status", "topic", "stats", "nodes", "edges", "queries", "unresolved"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "topic": {"type": "string"},
+    "stats": {"type": "object"},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "type", "surface", "anchor"]}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["id", "source", "target", "type", "anchor"]}},
+    "queries": {"type": "array", "items": {"type": "object", "required": ["q", "answer"]}},
+    "unresolved": {"type": "array", "items": {"type": "object"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

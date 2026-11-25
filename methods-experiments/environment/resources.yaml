@@ -1,0 +1,35 @@
+﻿resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：解析→写作→七项校验→产出
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/methods_rules.md
+    kind: rule
+    description: 章节结构、参数表规范、缺口写法与禁止项
+  - path: scripts/parse_protocol.py
+    kind: script
+    runtime: python3
+    description: 解析步骤/参数表/数据集，并用 config 校正参数取值与来源
+  - path: scripts/check_methods.py
+    kind: script
+    runtime: python3
+    description: 步骤/参数/数值/数据集/复现/对照 六项校验
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json + methods.md
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_protocol.md
+    kind: example
+    description: 最小示例实验记录
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

@@ -1,0 +1,210 @@
+{
+ "case_id": "demo-nano-001",
+ "status": "success",
+ "source": {
+  "title": "Low-cost colorimetric lead sensor (demo)",
+  "authors": [
+   "Demo Author"
+  ],
+  "year": "2026",
+  "version": "preprint v1",
+  "doi": "",
+  "source_file": "demo_paper.md"
+ },
+ "stats": {
+  "claims": 6,
+  "with_direct_evidence": 6,
+  "weak": 0,
+  "overbroad": 0,
+  "duplicates": 0
+ },
+ "nanopubs": [
+  {
+   "id": "np001",
+   "assertion": {
+    "text": "The sensor detected lead ions in all 36 samples within 12 min",
+    "type": "finding",
+    "conditions": [
+     "in all 36 samples within 12 min"
+    ],
+    "quantifiers": [
+     "all"
+    ],
+    "hedges": []
+   },
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "The sensor detected lead ions in all 36 samples within 12 min.",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  },
+  {
+   "id": "np002",
+   "assertion": {
+    "text": "Recovery ranged from 92% to 108% across the three tested matrices",
+    "type": "finding",
+    "conditions": [],
+    "quantifiers": [],
+    "hedges": []
+   },
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "Recovery ranged from 92% to 108% across the three tested matrices.",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  },
+  {
+   "id": "np003",
+   "assertion": {
+    "text": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method",
+    "type": "finding",
+    "conditions": [],
+    "quantifiers": [],
+    "hedges": []
+   },
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  },
+  {
+   "id": "np004",
+   "assertion": {
+    "text": "4 Discussion",
+    "type": "finding",
+    "conditions": [],
+    "quantifiers": [],
+    "hedges": []
+   },
+   "evidence": {
+    "anchor": "p003",
+    "page": 1,
+    "text": "4 Discussion",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  },
+  {
+   "id": "np005",
+   "assertion": {
+    "text": "These results may suggest that the method could be applied in resource-limited settings",
+    "type": "claim",
+    "conditions": [
+     "in resource-limited settings"
+    ],
+    "quantifiers": [],
+    "hedges": [
+     "may",
+     "could",
+     "suggest"
+    ]
+   },
+   "evidence": {
+    "anchor": "p004",
+    "page": 1,
+    "text": "These results may suggest that the method could be applied in resource-limited settings.",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  },
+  {
+   "id": "np006",
+   "assertion": {
+    "text": "A limitation is that field validation in humid conditions has not yet been performed",
+    "type": "limitation",
+    "conditions": [
+     "in humid conditions has not yet been perfo"
+    ],
+    "quantifiers": [],
+    "hedges": []
+   },
+   "evidence": {
+    "anchor": "p004",
+    "page": 1,
+    "text": "A limitation is that field validation in humid conditions has not yet been performed.",
+    "score": 1.0,
+    "kind": "direct"
+   },
+   "provenance": {
+    "title": "Low-cost colorimetric lead sensor (demo)",
+    "authors": [
+     "Demo Author"
+    ],
+    "year": "2026",
+    "version": "preprint v1",
+    "doi": "",
+    "source_file": "demo_paper.md"
+   },
+   "status": "ok"
+  }
+ ],
+ "issues": [],
+ "artifacts": [
+  {
+   "path": "nanopubs.json",
+   "kind": "json"
+  }
+ ]
+}

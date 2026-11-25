@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "nanopublication-claims result.json",
+  "type": "object",
+  "required": ["case_id", "status", "source", "stats", "nanopubs", "issues"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "source": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "year": {"type": "string"},
+        "version": {"type": "string"},
+        "doi": {"type": "string"},
+        "source_file": {"type": "string"}
+      }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "claims": {"type": "integer"},
+        "with_direct_evidence": {"type": "integer"},
+        "weak": {"type": "integer"},
+        "overbroad": {"type": "integer"},
+        "duplicates": {"type": "integer"}
+      }
+    },
+    "nanopubs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "assertion", "evidence", "provenance", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^np[0-9]{3,}$"},
+          "assertion": {
+            "type": "object",
+            "required": ["text", "type"],
+            "properties": {
+              "text": {"type": "string"},
+              "type": {"enum": ["finding", "method", "limitation", "claim"]},
+              "conditions": {"type": "array", "items": {"type": "string"}},
+              "quantifiers": {"type": "array", "items": {"type": "string"}},
+              "hedges": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "evidence": {
+            "type": "object",
+            "required": ["anchor", "text", "score"],
+            "properties": {
+              "anchor": {"type": "string", "pattern": "^p[0-9]{3,}$"},
+              "page": {"type": ["integer", "null"]},
+              "text": {"type": "string"},
+              "score": {"type": "number", "minimum": 0, "maximum": 1},
+              "kind": {"enum": ["direct", "inferred", "weak"]}
+            }
+          },
+          "provenance": {"type": "object"},
+          "status": {"enum": ["ok", "overbroad", "weak_evidence", "duplicate", "missing_source",
+                              "evidence_number_mismatch", "ambiguous_subject"]}
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {"type": "string"},
+          "issue": {"type": "string"},
+          "why": {"type": "string"},
+          "suggested_action": {"type": "string"}
+        }
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

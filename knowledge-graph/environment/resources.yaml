@@ -1,0 +1,35 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：实体/关系抽取、归一消歧、建图、三个查询与证据回链
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/kg_schema.md
+    kind: rule
+    description: 实体与关系类型定义、归一/消歧规则、证据强度判定
+  - path: scripts/extract_entities.py
+    kind: script
+    runtime: python3
+    description: 方法/材料/指标/任务/结论 五类实体抽取，带原文锚点与证据句
+  - path: scripts/extract_relations.py
+    kind: script
+    runtime: python3
+    description: 同句多实体 + 线索词判定关系类型与方向，标注 direct/weak
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 归一合并、同名歧义标记、建图、三个查询与导出
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_paper.md
+    kind: example
+    description: 最小示例论文片段（自拟）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

@@ -1,0 +1,76 @@
+{
+ "bound": [
+  {
+   "id": "c001",
+   "text": "The sensor detected lead ions in all 36 samples within 12 min",
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "The sensor detected lead ions in all 36 samples within 12 min.",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  },
+  {
+   "id": "c002",
+   "text": "Recovery ranged from 92% to 108% across the three tested matrices",
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "Recovery ranged from 92% to 108% across the three tested matrices.",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  },
+  {
+   "id": "c003",
+   "text": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method",
+   "evidence": {
+    "anchor": "p002",
+    "page": 1,
+    "text": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method.",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  },
+  {
+   "id": "c004",
+   "text": "4 Discussion",
+   "evidence": {
+    "anchor": "p003",
+    "page": 1,
+    "text": "4 Discussion",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  },
+  {
+   "id": "c005",
+   "text": "These results may suggest that the method could be applied in resource-limited settings",
+   "evidence": {
+    "anchor": "p004",
+    "page": 1,
+    "text": "These results may suggest that the method could be applied in resource-limited settings.",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  },
+  {
+   "id": "c006",
+   "text": "A limitation is that field validation in humid conditions has not yet been performed",
+   "evidence": {
+    "anchor": "p004",
+    "page": 1,
+    "text": "A limitation is that field validation in humid conditions has not yet been performed.",
+    "score": 1.0,
+    "kind": "direct",
+    "numbers_preserved": true
+   }
+  }
+ ]
+}

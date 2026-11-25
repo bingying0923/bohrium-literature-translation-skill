@@ -1,0 +1,190 @@
+{
+ "case_id": "demo-intro-001",
+ "status": "success",
+ "outline": {
+  "related_work": [
+   {
+    "group": "optical",
+    "refs": [
+     "smith2020",
+     "wang2019"
+    ],
+    "limitation": "多依赖实验室条件下的标准曲线，现场稳定性不足"
+   },
+   {
+    "group": "lab",
+    "refs": [
+     "chen2021",
+     "zhao2018"
+    ],
+    "limitation": "依赖集中设施与前处理，难以现场部署"
+   },
+   {
+    "group": "field",
+    "refs": [
+     "garcia2022",
+     "li2023"
+    ],
+    "limitation": "现场验证样本量小，潮湿条件未覆盖"
+   }
+  ],
+  "gap": {
+   "text": "现有工作尚未在低成本与现场稳定性之间取得平衡",
+   "refs": [
+    "wang2019",
+    "garcia2022"
+   ]
+  },
+  "contributions": [
+   {
+    "text": "提出一种低成本比色传感器，用螯合膜富集铅离子",
+    "evidence": "Fig. 2"
+   },
+   {
+    "text": "检出限达到 0.8 µg/L，低于此前报道的比色法",
+    "evidence": "Table 2"
+   },
+   {
+    "text": "在三个城市 36 份水样上验证，回收率 92%–108%",
+    "evidence": "Fig. 3"
+   }
+  ]
+ },
+ "intro": {
+  "paragraphs": [
+   {
+    "id": "p1",
+    "role": "background",
+    "citations": [
+     "chen2021"
+    ],
+    "text": "饮用水中铅污染在许多地区仍是公共卫生问题，暴露途径与健康效应已有系统综述 [chen2021]。"
+   },
+   {
+    "id": "p2",
+    "role": "related",
+    "citations": [
+     "zhao2018"
+    ],
+    "text": "实验室方法方面，ICP-MS 等方案灵敏度高 [zhao2018]，但依赖集中设施与样品前处理，难以现场部署。"
+   },
+   {
+    "id": "p3",
+    "role": "related",
+    "citations": [
+     "smith2020",
+     "wang2019"
+    ],
+    "text": "光学方法方面，比色传感器与便携式光学传感被用于水质快检 [smith2020; wang2019]；成本低，但多依赖实验室条件下的标准曲线。"
+   },
+   {
+    "id": "p4",
+    "role": "related",
+    "citations": [
+     "garcia2022",
+     "li2023"
+    ],
+    "text": "现场验证方面，纸基传感器与现场筛查方案已在少量水样上验证 [garcia2022; li2023]，但样本量小、潮湿条件未覆盖。"
+   },
+   {
+    "id": "p5",
+    "role": "gap",
+    "citations": [
+     "wang2019",
+     "garcia2022"
+    ],
+    "text": "综合来看，现有工作在低成本与现场稳定性之间尚未取得平衡 [wang2019; garcia2022]。"
+   },
+   {
+    "id": "p6",
+    "role": "contributions",
+    "citations": [],
+    "text": "本文提出一种低成本比色传感器（Fig. 2），检出限 0.8 µg/L（Table 2），并在三个城市 36 份水样上验证，回收率 92%–108%（Fig. 3）。"
+   }
+  ]
+ },
+ "citation_map": [
+  {
+   "sentence_id": "p1",
+   "claims": "饮用水中铅污染在许多地区仍是公共卫生问题，暴露途径与健康效应已有系统综述 [chen2021]。",
+   "refs": [
+    "chen2021"
+   ]
+  },
+  {
+   "sentence_id": "p2",
+   "claims": "实验室方法方面，ICP-MS 等方案灵敏度高 [zhao2018]，但依赖集中设施与样品前处理，难以现场部署。",
+   "refs": [
+    "zhao2018"
+   ]
+  },
+  {
+   "sentence_id": "p3",
+   "claims": "光学方法方面，比色传感器与便携式光学传感被用于水质快检 [smith2020; wang2019]；成本低，但多依赖实验室条件下的标准曲线。",
+   "refs": [
+    "smith2020",
+    "wang2019"
+   ]
+  },
+  {
+   "sentence_id": "p4",
+   "claims": "现场验证方面，纸基传感器与现场筛查方案已在少量水样上验证 [garcia2022; li2023]，但样本量小、潮湿条件未覆盖。",
+   "refs": [
+    "garcia2022",
+    "li2023"
+   ]
+  },
+  {
+   "sentence_id": "p5",
+   "claims": "综合来看，现有工作在低成本与现场稳定性之间尚未取得平衡 [wang2019; garcia2022]。",
+   "refs": [
+    "wang2019",
+    "garcia2022"
+   ]
+  },
+  {
+   "sentence_id": "p6",
+   "claims": "本文提出一种低成本比色传感器（Fig. 2），检出限 0.8 µg/L（Table 2），并在三个城市 36 份水样上验证，回收率 92%–108%（Fig. ",
+   "refs": []
+  }
+ ],
+ "checks": {
+  "coverage": {
+   "ok": true,
+   "issues": [],
+   "rate": 1.0
+  },
+  "empty_phrases": {
+   "ok": true,
+   "issues": []
+  },
+  "grouping": {
+   "ok": true,
+   "issues": []
+  },
+  "gap_support": {
+   "ok": true,
+   "issues": []
+  },
+  "contributions": {
+   "ok": true,
+   "issues": []
+  },
+  "refs_valid": {
+   "ok": true,
+   "issues": [],
+   "uncited": []
+  }
+ },
+ "issues": [],
+ "artifacts": [
+  {
+   "path": "intro.md",
+   "kind": "markdown"
+  },
+  {
+   "path": "citation_map.csv",
+   "kind": "csv"
+  }
+ ]
+}

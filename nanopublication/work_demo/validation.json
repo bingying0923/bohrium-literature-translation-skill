@@ -1,0 +1,13 @@
+{
+ "issues": [],
+ "blocking": 0,
+ "ok": true,
+ "counts": {
+  "overbroad": 0,
+  "weak_evidence": 0,
+  "duplicate": 0,
+  "missing_source": 0,
+  "evidence_number_mismatch": 0,
+  "subject_check": 0
+ }
+}

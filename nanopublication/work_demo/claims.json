@@ -1,0 +1,92 @@
+{
+ "claims": [
+  {
+   "id": "c001",
+   "anchor": "p002",
+   "page": 1,
+   "text": "The sensor detected lead ions in all 36 samples within 12 min",
+   "type": "finding",
+   "hedges": [],
+   "quantifiers": [
+    "all"
+   ],
+   "conditions": [
+    "in all 36 samples within 12 min"
+   ],
+   "numbers": [
+    "36",
+    "12"
+   ]
+  },
+  {
+   "id": "c002",
+   "anchor": "p002",
+   "page": 1,
+   "text": "Recovery ranged from 92% to 108% across the three tested matrices",
+   "type": "finding",
+   "hedges": [],
+   "quantifiers": [],
+   "conditions": [],
+   "numbers": [
+    "92",
+    "108"
+   ]
+  },
+  {
+   "id": "c003",
+   "anchor": "p002",
+   "page": 1,
+   "text": "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method",
+   "type": "finding",
+   "hedges": [],
+   "quantifiers": [],
+   "conditions": [],
+   "numbers": [
+    "0.8"
+   ]
+  },
+  {
+   "id": "c004",
+   "anchor": "p003",
+   "page": 1,
+   "text": "4 Discussion",
+   "type": "finding",
+   "hedges": [],
+   "quantifiers": [],
+   "conditions": [],
+   "numbers": [
+    "4"
+   ]
+  },
+  {
+   "id": "c005",
+   "anchor": "p004",
+   "page": 1,
+   "text": "These results may suggest that the method could be applied in resource-limited settings",
+   "type": "claim",
+   "hedges": [
+    "may",
+    "could",
+    "suggest"
+   ],
+   "quantifiers": [],
+   "conditions": [
+    "in resource-limited settings"
+   ],
+   "numbers": []
+  },
+  {
+   "id": "c006",
+   "anchor": "p004",
+   "page": 1,
+   "text": "A limitation is that field validation in humid conditions has not yet been performed",
+   "type": "limitation",
+   "hedges": [],
+   "quantifiers": [],
+   "conditions": [
+    "in humid conditions has not yet been perfo"
+   ],
+   "numbers": []
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+﻿{
+  "refs": [
+    {"key": "smith2020", "group": "optical", "title": "Colorimetric sensor for lead detection", "year": "2020"},
+    {"key": "wang2019", "group": "optical", "title": "Portable optical sensors for water quality", "year": "2019"},
+    {"key": "chen2021", "group": "lab", "title": "Lead in drinking water: a review", "year": "2021"},
+    {"key": "zhao2018", "group": "lab", "title": "ICP-MS determination of trace lead", "year": "2018"},
+    {"key": "garcia2022", "group": "field", "title": "Field validation of paper-based sensors", "year": "2022"},
+    {"key": "li2023", "group": "field", "title": "Field screening of heavy metals in rural wells", "year": "2023"}
+  ]
+}

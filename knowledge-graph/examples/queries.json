@@ -1,0 +1,46 @@
+[
+ {
+  "q": "methods_used",
+  "note": "本文出现的方法及其证据",
+  "answer": [
+   {
+    "node": "The sensor",
+    "anchor": "p002",
+    "evidence": []
+   },
+   {
+    "node": "colorimetric reference method",
+    "anchor": "p002",
+    "evidence": [
+     "The limit of detection of 0.8 µg/L was lower than that of the colorimetric reference method."
+    ]
+   },
+   {
+    "node": "that the method",
+    "anchor": "p004",
+    "evidence": []
+   }
+  ]
+ },
+ {
+  "q": "metric_values",
+  "note": "指标的报告值与出处",
+  "answer": [
+   {
+    "node": "Recovery",
+    "values": [],
+    "anchor": "p002"
+   },
+   {
+    "node": "limit of detection",
+    "values": [],
+    "anchor": "p002"
+   }
+  ]
+ },
+ {
+  "q": "conflicts",
+  "note": "同一实体对上的矛盾关系",
+  "answer": []
+ }
+]

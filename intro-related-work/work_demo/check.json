@@ -1,0 +1,32 @@
+{
+ "checks": {
+  "coverage": {
+   "ok": true,
+   "issues": [],
+   "rate": 1.0
+  },
+  "empty_phrases": {
+   "ok": true,
+   "issues": []
+  },
+  "grouping": {
+   "ok": true,
+   "issues": []
+  },
+  "gap_support": {
+   "ok": true,
+   "issues": []
+  },
+  "contributions": {
+   "ok": true,
+   "issues": []
+  },
+  "refs_valid": {
+   "ok": true,
+   "issues": [],
+   "uncited": []
+  }
+ },
+ "blocking": 0,
+ "ok": true
+}
