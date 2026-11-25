@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "pdf-layout-parser result.json",
+  "type": "object",
+  "required": ["case_id", "status", "document", "structure", "sections", "tables", "figures", "formulas", "quality"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "document": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "pages": {"type": "integer"},
+        "columns": {"type": "integer"},
+        "source_file": {"type": "string"}
+      }
+    },
+    "structure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "page": {"type": "integer"},
+          "anchor": {"type": "string"},
+          "blocks": {"type": "integer"}
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "page": {"type": "integer"},
+          "anchor": {"type": "string"},
+          "blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "anchor": {"type": "string", "pattern": "^b[0-9]{4,}$"},
+                "type": {"enum": ["text", "caption"]},
+                "text": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "page": {"type": "integer"},
+          "rows": {"type": "integer"},
+          "cols": {"type": "integer"},
+          "markdown": {"type": "string"}
+        }
+      }
+    },
+    "figures": {"type": "array", "items": {"type": "object"}},
+    "formulas": {"type": "array", "items": {"type": "object"}},
+    "quality": {"type": "object"},
+    "issues": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

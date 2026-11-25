@@ -1,0 +1,103 @@
+{
+ "doc": {
+  "source_file": "demo_layout.txt",
+  "pages": 2,
+  "columns": 2,
+  "columns_per_page": [
+   2,
+   1
+  ],
+  "blocks": 11
+ },
+ "pages": [
+  {
+   "page": 1,
+   "columns": 2,
+   "blocks": [
+    {
+     "anchor": "b0001",
+     "page": 1,
+     "col": 1,
+     "text": "Journal of Sensors and Actuators 2026",
+     "y": 1
+    },
+    {
+     "anchor": "b0002",
+     "page": 1,
+     "col": 1,
+     "text": "Abstract  We report a low-cost colorimetric sensor for lead quantification The sensing principle relies on a colour change that is read by a phone camera Samples are filtered and passed through the membrane before imaging We test the sensor on water samples collected in three cities Each assay takes about twelve minutes to complete",
+     "y": 5
+    },
+    {
+     "anchor": "b0003",
+     "page": 1,
+     "col": 2,
+     "text": "Preprint 1 Lead ions are captured on a chelating membrane The colour change is quantified with a calibration curve Recovery is evaluated on spiked tap water The limit of detection is 0.8 µg/L Field deployment is only discussed as future work",
+     "y": 6
+    }
+   ]
+  },
+  {
+   "page": 2,
+   "columns": 1,
+   "blocks": [
+    {
+     "anchor": "b0004",
+     "page": 2,
+     "col": 1,
+     "text": "Journal of Sensors and Actuators 2026                            Preprint   2",
+     "y": 1
+    },
+    {
+     "anchor": "b0005",
+     "page": 2,
+     "col": 1,
+     "text": "1 Introduction",
+     "y": 1
+    },
+    {
+     "anchor": "b0006",
+     "page": 2,
+     "col": 1,
+     "text": "Lead contamination of drinking water remains a public health problem in many regions. Portable sensors may enable screening where laboratory facilities are unavailable.",
+     "y": 1
+    },
+    {
+     "anchor": "b0007",
+     "page": 2,
+     "col": 1,
+     "text": "2 Methods",
+     "y": 1
+    },
+    {
+     "anchor": "b0008",
+     "page": 2,
+     "col": 1,
+     "text": "We collected 36 water samples from three cities between March and June 2024. Samples were filtered and passed through a chelating membrane. The calibration curve was fitted with a linear model, and the limit of detection was calculated as three times the standard deviation of blank measurements.",
+     "y": 2
+    },
+    {
+     "anchor": "b0009",
+     "page": 2,
+     "col": 1,
+     "text": "3 Results",
+     "y": 1
+    },
+    {
+     "anchor": "b0010",
+     "page": 2,
+     "col": 1,
+     "text": "Compound      Recovery (%)   RSD (%) Tap water     92             4.1 River water   104            5.2 Lake water    108            6.0 Recovery from spiked samples ranged from 92% to 108%. The limit of detection of 0.8 µg/L is lower than values reported previously (Fig. 2). The calibration slope was stable across the three batches, as described in Eq. (1).",
+     "y": 6
+    },
+    {
+     "anchor": "b0011",
+     "page": 2,
+     "col": 1,
+     "text": "Figure 2. Calibration curve obtained with the smartphone camera.",
+     "y": 1
+    }
+   ]
+  }
+ ]
+}

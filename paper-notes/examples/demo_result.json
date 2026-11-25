@@ -1,0 +1,192 @@
+{
+ "case_id": "demo-notes-001",
+ "status": "success",
+ "paper": {
+  "title": "Low-cost colorimetric lead sensor (synthetic demo)",
+  "pages": 2,
+  "sections": [
+   "Abstract",
+   "Introduction",
+   "Methods",
+   "Results",
+   "Discussion"
+  ]
+ },
+ "card": {
+  "research_question": {
+   "value": "We investigate whether a low-cost colorimetric sensor can quantify lead ions in drinking water at concentrations relevant to public health.",
+   "anchors": [
+    "p001"
+   ],
+   "status": "reported"
+  },
+  "data": {
+   "value": "We collected 36 water samples from three cities between March and June 2024. Samples were filtered and passed through a chelating membrane; colour changes were recorded with a smartphone camera and converted to concentration with a calibration curve.",
+   "anchors": [
+    "p003",
+    "p003"
+   ],
+   "status": "reported"
+  },
+  "methods": {
+   "value": "We investigate whether a low-cost colorimetric sensor can quantify lead ions in drinking water at concentrations relevant to public health. The sensor uses a chelating membrane and a smartphone camera.",
+   "anchors": [
+    "p001",
+    "p001"
+   ],
+   "status": "reported"
+  },
+  "limitations": {
+   "value": "These results may suggest that the method could be applied in resource-limited settings. A limitation of this study is that only three cities were sampled, and field validation in humid conditions has not yet been performed.",
+   "anchors": [
+    "p005"
+   ],
+   "status": "reported"
+  },
+  "novelty": {
+   "value": "Unlike previous laboratory-bound methods, portable optical sensors may enable field screening, but their detection limits are often insufficient.",
+   "anchors": [
+    "p002"
+   ],
+   "status": "reported"
+  },
+  "key_findings": [
+   {
+    "value": "The sensor quantified lead ions across the tested range with a limit of detection of 0.8 µg/L, which is lower than values reported previously (Fig. 2).",
+    "anchors": [
+     "p004"
+    ],
+    "numbers": [
+     "0.8",
+     "2"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "term": "Lead",
+    "anchor": "p002"
+   },
+   {
+    "term": "Unlike",
+    "anchor": "p002"
+   },
+   {
+    "term": "March",
+    "anchor": "p003"
+   },
+   {
+    "term": "June",
+    "anchor": "p003"
+   },
+   {
+    "term": "Samples",
+    "anchor": "p003"
+   },
+   {
+    "term": "Recovery",
+    "anchor": "p004"
+   }
+  ]
+ },
+ "notes": [
+  {
+   "section": "Abstract",
+   "anchor": "p001",
+   "page": 1,
+   "kind": "question",
+   "text": "研究能否用低成本比色传感器，在公共卫生相关浓度下定量饮用水中铅离子"
+  },
+  {
+   "section": "Introduction",
+   "anchor": "p002",
+   "page": 2,
+   "kind": "novelty",
+   "text": "与以往依赖实验室的方法不同，便携式光学传感器可能支持现场筛查，但检出限常不足（保留 may 的推测语气）"
+  },
+  {
+   "section": "Methods",
+   "anchor": "p003",
+   "page": 2,
+   "kind": "method",
+   "text": "用螯合膜富集、手机相机记录颜色变化，再按标准曲线换算浓度"
+  },
+  {
+   "section": "Methods",
+   "anchor": "p003",
+   "page": 2,
+   "kind": "data",
+   "text": "2024 年 3 月至 6 月在三个城市采集 36 份水样"
+  },
+  {
+   "section": "Methods",
+   "anchor": "p003",
+   "page": 2,
+   "kind": "result",
+   "text": "检出限 0.8 µg/L，单次检测耗时 12 min"
+  },
+  {
+   "section": "Results",
+   "anchor": "p004",
+   "page": 2,
+   "kind": "result",
+   "text": "检出限 0.8 µg/L，低于此前报道的数值（Fig. 2）"
+  },
+  {
+   "section": "Results",
+   "anchor": "p004",
+   "page": 2,
+   "kind": "result",
+   "text": "加标回收率 92%–108%"
+  },
+  {
+   "section": "Discussion",
+   "anchor": "p005",
+   "page": 2,
+   "kind": "claim",
+   "text": "作者推测该方法可用于资源有限场景（may suggest / could applied）"
+  },
+  {
+   "section": "Discussion",
+   "anchor": "p005",
+   "page": 2,
+   "kind": "limitation",
+   "text": "局限：仅采样三个城市，潮湿环境下的现场验证尚未开展"
+  }
+ ],
+ "coverage": {
+  "sections_total": 5,
+  "sections_covered": 5,
+  "missing": [],
+  "ok": true
+ },
+ "checks": {
+  "anchors": {
+   "ok": true,
+   "issues": []
+  },
+  "numbers": {
+   "ok": true,
+   "issues": []
+  },
+  "no_new_facts": {
+   "ok": true,
+   "issues": []
+  },
+  "limitations": {
+   "ok": true,
+   "issues": []
+  }
+ },
+ "unresolved": [],
+ "artifacts": [
+  {
+   "path": "notes.md",
+   "kind": "markdown"
+  },
+  {
+   "path": "paper_card.json",
+   "kind": "json"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "research_question": {
+  "value": "We investigate whether a low-cost colorimetric sensor can quantify lead ions in drinking water at concentrations relevant to public health.",
+  "anchors": [
+   "p001"
+  ],
+  "status": "reported"
+ },
+ "data": {
+  "value": "We collected 36 water samples from three cities between March and June 2024. Samples were filtered and passed through a chelating membrane; colour changes were recorded with a smartphone camera and converted to concentration with a calibration curve.",
+  "anchors": [
+   "p003",
+   "p003"
+  ],
+  "status": "reported"
+ },
+ "methods": {
+  "value": "We investigate whether a low-cost colorimetric sensor can quantify lead ions in drinking water at concentrations relevant to public health. The sensor uses a chelating membrane and a smartphone camera.",
+  "anchors": [
+   "p001",
+   "p001"
+  ],
+  "status": "reported"
+ },
+ "limitations": {
+  "value": "These results may suggest that the method could be applied in resource-limited settings. A limitation of this study is that only three cities were sampled, and field validation in humid conditions has not yet been performed.",
+  "anchors": [
+   "p005"
+  ],
+  "status": "reported"
+ },
+ "novelty": {
+  "value": "Unlike previous laboratory-bound methods, portable optical sensors may enable field screening, but their detection limits are often insufficient.",
+  "anchors": [
+   "p002"
+  ],
+  "status": "reported"
+ },
+ "key_findings": [
+  {
+   "value": "The sensor quantified lead ions across the tested range with a limit of detection of 0.8 µg/L, which is lower than values reported previously (Fig. 2).",
+   "anchors": [
+    "p004"
+   ],
+   "numbers": [
+    "0.8",
+    "2"
+   ]
+  }
+ ],
+ "terms": [
+  {
+   "term": "Lead",
+   "anchor": "p002"
+  },
+  {
+   "term": "Unlike",
+   "anchor": "p002"
+  },
+  {
+   "term": "March",
+   "anchor": "p003"
+  },
+  {
+   "term": "June",
+   "anchor": "p003"
+  },
+  {
+   "term": "Samples",
+   "anchor": "p003"
+  },
+  {
+   "term": "Recovery",
+   "anchor": "p004"
+  }
+ ]
+}

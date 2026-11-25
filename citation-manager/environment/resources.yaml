@@ -1,0 +1,39 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：解析→核查→重排→产出 四步流程与输出契约
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/citation_rules.md
+    kind: rule
+    description: 编号、去重、字段完整性、样式统一的判定口径
+  - path: scripts/parse_refs.py
+    kind: script
+    runtime: python3
+    description: 正文引用标记与文末条目解析（含 DOI/题名/作者/年份）
+  - path: scripts/audit_citations.py
+    kind: script
+    runtime: python3
+    description: 缺引/多引/缺号/顺序/重复/字段残缺/样式混用 七项核查
+  - path: scripts/renumber.py
+    kind: script
+    runtime: python3
+    description: 按首次出现顺序重排编号、合并重复条目、同步正文标记
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json + manuscript.md + references.json + citation_changes.csv
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_manuscript.md
+    kind: example
+    description: 最小示例稿件（含重复条目与未被引条目，自拟）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

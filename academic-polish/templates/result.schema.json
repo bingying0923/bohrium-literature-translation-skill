@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "academic-polish-minimal-edit result.json",
+  "type": "object",
+  "required": ["case_id", "status", "genre", "summary", "glossary", "units", "audit", "unresolved"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "genre": {"enum": ["journal-article", "thesis", "grant", "response-to-reviewer", "other"]},
+    "summary": {
+      "type": "object",
+      "properties": {
+        "units_total": {"type": "integer"},
+        "units_changed": {"type": "integer"},
+        "blocking": {"type": "integer"},
+        "warnings": {"type": "integer"},
+        "term_consistency": {"type": "number"},
+        "hedge_preserved": {"type": "boolean"}
+      }
+    },
+    "glossary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term": {"type": "string"},
+          "preferred": {"type": "string"},
+          "locked": {"type": "boolean"},
+          "occurrences": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "original", "revised"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^p[0-9]{2,}\\.s[0-9]{2,}$"},
+          "paragraph": {"type": "integer"},
+          "original": {"type": "string"},
+          "revised": {"type": "string"},
+          "changed": {"type": "boolean"},
+          "change_types": {
+            "type": "array",
+            "items": {"enum": ["format", "grammar", "terminology", "register", "clarity", "structure", "no_change"]}
+          },
+          "reasons": {"type": "array", "items": {"type": "string"}},
+          "protected": {"type": "object"}
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "numbers": {"$ref": "#/$defs/check"},
+        "units": {"$ref": "#/$defs/check"},
+        "citations": {"$ref": "#/$defs/check"},
+        "figures": {"$ref": "#/$defs/check"},
+        "negation": {"$ref": "#/$defs/check"},
+        "hedging": {"$ref": "#/$defs/check"},
+        "terminology": {"$ref": "#/$defs/check"}
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {"type": "string"},
+          "issue": {"type": "string"},
+          "why": {"type": "string"},
+          "suggested_action": {"type": "string"}
+        }
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  },
+  "$defs": {
+    "check": {
+      "type": "object",
+      "required": ["ok"],
+      "properties": {"ok": {"type": "boolean"}, "blocking": {"type": "array"}}
+    }
+  }
+}

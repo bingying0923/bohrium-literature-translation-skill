@@ -1,0 +1,234 @@
+{
+ "case_id": "demo-polish-001",
+ "status": "success",
+ "genre": "journal-article",
+ "summary": {
+  "units_total": 6,
+  "units_changed": 6,
+  "blocking": 0,
+  "warnings": 0,
+  "term_consistency": 1.0,
+  "hedge_preserved": true
+ },
+ "glossary": [
+  {
+   "term": "detection limit",
+   "preferred": "limit of detection",
+   "locked": true,
+   "occurrences": [
+    "p01.s04"
+   ]
+  },
+  {
+   "term": "easy-to-use",
+   "preferred": "easy to use",
+   "locked": true,
+   "occurrences": [
+    "p01.s02"
+   ]
+  },
+  {
+   "term": "chelating membrane",
+   "preferred": "chelating membrane",
+   "locked": true,
+   "occurrences": [
+    "p01.s02"
+   ]
+  }
+ ],
+ "units": [
+  {
+   "id": "p01.s01",
+   "paragraph": 1,
+   "original": "Rapid detection of lead ions in drinking water remains a practical challenge.",
+   "revised": "Detecting lead ions rapidly in drinking water remains a practical challenge.",
+   "changed": true,
+   "change_types": [
+    "grammar"
+   ],
+   "reasons": [
+    "局部语法/搭配/标点修正，句意与信息结构未变"
+   ],
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s02",
+   "paragraph": 1,
+   "original": "We demonstrate a cheap and easy-to-use colorimetric sensor that is based on a chelating membrane.",
+   "revised": "We demonstrate a low-cost and easy to use colorimetric sensor based on a chelating membrane.",
+   "changed": true,
+   "change_types": [
+    "terminology"
+   ],
+   "reasons": [
+    "按术语表统一为「easy to use」"
+   ],
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s03",
+   "paragraph": 1,
+   "original": "The data was collected from 36 water samples in three cities.",
+   "revised": "The data were collected from 36 water samples in three cities.",
+   "changed": true,
+   "change_types": [
+    "grammar"
+   ],
+   "reasons": [
+    "局部语法/搭配/标点修正，句意与信息结构未变"
+   ],
+   "protected": {
+    "numbers": [
+     "36"
+    ],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s04",
+   "paragraph": 1,
+   "original": "The detection limit is 0.8 µg/L [3], which is lower than previous reports (Fig. 2).",
+   "revised": "The limit of detection is 0.8 µg/L [3], which is lower than values reported previously (Fig. 2).",
+   "changed": true,
+   "change_types": [
+    "terminology"
+   ],
+   "reasons": [
+    "按术语表统一为「limit of detection」"
+   ],
+   "protected": {
+    "numbers": [
+     "0.8",
+     "3",
+     "2"
+    ],
+    "units": [
+     "µg"
+    ],
+    "citations": [
+     "[3]"
+    ],
+    "figures": [
+     "Fig. 2)"
+    ],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s05",
+   "paragraph": 1,
+   "original": "Samples did not require pretreatment, and the assay can be finished in 12 min.",
+   "revised": "Samples did not require pretreatment, and the assay can be completed in 12 min.",
+   "changed": true,
+   "change_types": [
+    "grammar"
+   ],
+   "reasons": [
+    "局部语法/搭配/标点修正，句意与信息结构未变"
+   ],
+   "protected": {
+    "numbers": [
+     "12"
+    ],
+    "units": [
+     "min"
+    ],
+    "citations": [],
+    "figures": [],
+    "hedges": [
+     "can"
+    ],
+    "negation": [
+     "not"
+    ]
+   }
+  },
+  {
+   "id": "p01.s06",
+   "paragraph": 1,
+   "original": "This may suggest that the method could be applied in resource-limited settings, although field validation is still needed.",
+   "revised": "These results may suggest that the method could be applied in resource-limited settings, although field validation is still needed.",
+   "changed": true,
+   "change_types": [
+    "grammar"
+   ],
+   "reasons": [
+    "局部语法/搭配/标点修正，句意与信息结构未变"
+   ],
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [
+     "may",
+     "could",
+     "suggest"
+    ],
+    "negation": []
+   }
+  }
+ ],
+ "audit": {
+  "numbers": {
+   "ok": true,
+   "blocking": []
+  },
+  "units": {
+   "ok": true,
+   "blocking": []
+  },
+  "citations": {
+   "ok": true,
+   "blocking": []
+  },
+  "figures": {
+   "ok": true,
+   "blocking": []
+  },
+  "negation": {
+   "ok": true,
+   "blocking": []
+  },
+  "hedging": {
+   "ok": true,
+   "blocking": [],
+   "original_count": 4,
+   "revised_count": 4
+  },
+  "terminology": {
+   "ok": true,
+   "violations": []
+  }
+ },
+ "unresolved": [],
+ "artifacts": [
+  {
+   "path": "polished.md",
+   "kind": "markdown"
+  },
+  {
+   "path": "changes.csv",
+   "kind": "csv"
+  }
+ ]
+}

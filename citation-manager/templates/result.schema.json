@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "citation-consistency-manager result.json",
+  "type": "object",
+  "required": ["case_id", "status", "style", "manuscript", "references", "audit", "changes", "todo"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "style": {"enum": ["numeric", "author-year", "unknown"]},
+    "manuscript": {
+      "type": "object",
+      "properties": {
+        "body": {"type": "string"},
+        "citations_in_text": {"type": "integer"},
+        "references": {"type": "integer"}
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["index"],
+        "properties": {
+          "index": {"type": "integer"},
+          "old_index": {"type": "integer"},
+          "authors": {"type": "string"},
+          "year": {"type": "string"},
+          "title": {"type": "string"},
+          "venue": {"type": "string"},
+          "doi": {"type": "string"},
+          "raw": {"type": "string"}
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "missing_references": {"type": "array", "items": {"type": "integer"}},
+        "uncited_references": {"type": "array", "items": {"type": "integer"}},
+        "numbering_gaps": {"type": "array", "items": {"type": "integer"}},
+        "order_of_appearance_ok": {"type": "boolean"},
+        "first_appearance_order": {"type": "array", "items": {"type": "integer"}},
+        "duplicates": {"type": "array", "items": {"type": "object"}},
+        "incomplete_entries": {"type": "array", "items": {"type": "object"}},
+        "style_mixed": {"type": "object"}
+      }
+    },
+    "changes": {
+      "type": "object",
+      "properties": {
+        "renumber_mapping": {"type": "object"},
+        "merged_duplicates": {"type": "object"},
+        "markers_updated": {"type": "integer"}
+      }
+    },
+    "todo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue": {"type": "string"},
+          "suggested_action": {"type": "string"}
+        }
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

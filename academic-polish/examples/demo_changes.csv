@@ -1,0 +1,7 @@
+﻿unit_id,original,revised,change_type,reason,risk
+p01.s01,Rapid detection of lead ions in drinking water remains a practical challenge.,Detecting lead ions rapidly in drinking water remains a practical challenge.,grammar,局部语法/搭配/标点修正，句意与信息结构未变,low
+p01.s02,We demonstrate a cheap and easy-to-use colorimetric sensor that is based on a chelating membrane.,We demonstrate a low-cost and easy to use colorimetric sensor based on a chelating membrane.,terminology,按术语表统一为「easy to use」,low
+p01.s03,The data was collected from 36 water samples in three cities.,The data were collected from 36 water samples in three cities.,grammar,局部语法/搭配/标点修正，句意与信息结构未变,low
+p01.s04,"The detection limit is 0.8 µg/L [3], which is lower than previous reports (Fig. 2).","The limit of detection is 0.8 µg/L [3], which is lower than values reported previously (Fig. 2).",terminology,按术语表统一为「limit of detection」,low
+p01.s05,"Samples did not require pretreatment, and the assay can be finished in 12 min.","Samples did not require pretreatment, and the assay can be completed in 12 min.",grammar,局部语法/搭配/标点修正，句意与信息结构未变,low
+p01.s06,"This may suggest that the method could be applied in resource-limited settings, although field validation is still needed.","These results may suggest that the method could be applied in resource-limited settings, although field validation is still needed.",grammar,局部语法/搭配/标点修正，句意与信息结构未变,low

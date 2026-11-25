@@ -1,0 +1,119 @@
+{
+ "body": "# 饮用水中铅离子的便携式检测\n\n饮用水中铅污染仍然是许多地区的公共卫生问题 [1]。便携式光学传感器可能支持缺乏实验室条件的现场筛查 [2]，比色法已被用于水质快检 [3]。近期工作把该方法推进到现场验证 [2,4]。\n",
+ "entries": [
+  {
+   "index": 1,
+   "raw": "Chen H. \"Lead in drinking water: a review of exposure pathways\". Environmental Science 2021.",
+   "year": "2021",
+   "doi": "",
+   "title": "Lead in drinking water: a review of exposure pathways",
+   "authors": "Chen H",
+   "venue": "\". Environmental Science 2021",
+   "key": "leadindrinkingwaterareviewofexposurepathways",
+   "old_index": 3
+  },
+  {
+   "index": 2,
+   "raw": "Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "year": "2020",
+   "doi": "10.1000/abc1",
+   "title": "A colorimetric sensor for lead detection",
+   "authors": "Smith J, Lee K",
+   "venue": "\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "key": "10.1000/abc1",
+   "old_index": 1
+  },
+  {
+   "index": 3,
+   "raw": "Wang L, Zhang Y. \"Portable optical sensors for water quality monitoring\". Analytical Chemistry 2019.",
+   "year": "2019",
+   "doi": "",
+   "title": "Portable optical sensors for water quality monitoring",
+   "authors": "Wang L, Zhang Y",
+   "venue": "\". Analytical Chemistry 2019",
+   "key": "portableopticalsensorsforwaterqualitymonitoring",
+   "old_index": 2
+  },
+  {
+   "index": 4,
+   "raw": "Garcia M. \"Field validation of paper-based sensors\". Lab on a Chip 2022.",
+   "year": "2022",
+   "doi": "",
+   "title": "Field validation of paper-based sensors",
+   "authors": "Garcia M",
+   "venue": "\". Lab on a Chip 2022",
+   "key": "fieldvalidationofpaperbasedsensors",
+   "old_index": 5
+  },
+  {
+   "index": 5,
+   "raw": "Nobody A. \"A paper that is never cited\". Journal of Irrelevance 2018.",
+   "year": "2018",
+   "doi": "",
+   "title": "A paper that is never cited",
+   "authors": "Nobody A",
+   "venue": "\". Journal of Irrelevance 2018",
+   "key": "apaperthatisnevercited",
+   "old_index": 6
+  }
+ ],
+ "mapping": {
+  "1": 2,
+  "2": 3,
+  "3": 1,
+  "4": 2,
+  "5": 4,
+  "6": 5
+ },
+ "merged": {
+  "4": 1
+ },
+ "changes": [
+  {
+   "old": "[3]",
+   "new": "[1]",
+   "numbers_old": [
+    3
+   ],
+   "numbers_new": [
+    1
+   ]
+  },
+  {
+   "old": "[1]",
+   "new": "[2]",
+   "numbers_old": [
+    1
+   ],
+   "numbers_new": [
+    2
+   ]
+  },
+  {
+   "old": "[2]",
+   "new": "[3]",
+   "numbers_old": [
+    2
+   ],
+   "numbers_new": [
+    3
+   ]
+  },
+  {
+   "old": "[4-5]",
+   "new": "[2,4]",
+   "numbers_old": [
+    4,
+    5
+   ],
+   "numbers_new": [
+    2,
+    4
+   ]
+  }
+ ],
+ "stats": {
+  "entries": 5,
+  "changed_markers": 4
+ }
+}

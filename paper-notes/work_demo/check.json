@@ -1,0 +1,26 @@
+{
+ "coverage": {
+  "sections_total": 5,
+  "sections_covered": 5,
+  "missing": [],
+  "ok": true
+ },
+ "anchors": {
+  "ok": true,
+  "issues": []
+ },
+ "numbers": {
+  "ok": true,
+  "issues": []
+ },
+ "no_new_facts": {
+  "ok": true,
+  "issues": []
+ },
+ "limitations": {
+  "ok": true,
+  "issues": []
+ },
+ "blocking": 0,
+ "ok": true
+}

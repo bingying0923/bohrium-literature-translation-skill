@@ -1,0 +1,112 @@
+{
+ "doc": {
+  "source_file": "demo_input.md",
+  "paragraphs": 1,
+  "units": 6,
+  "chars": 518
+ },
+ "units": [
+  {
+   "id": "p01.s01",
+   "paragraph": 1,
+   "original": "Rapid detection of lead ions in drinking water remains a practical challenge.",
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s02",
+   "paragraph": 1,
+   "original": "We demonstrate a cheap and easy-to-use colorimetric sensor that is based on a chelating membrane.",
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s03",
+   "paragraph": 1,
+   "original": "The data was collected from 36 water samples in three cities.",
+   "protected": {
+    "numbers": [
+     "36"
+    ],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s04",
+   "paragraph": 1,
+   "original": "The detection limit is 0.8 µg/L [3], which is lower than previous reports (Fig. 2).",
+   "protected": {
+    "numbers": [
+     "0.8",
+     "3",
+     "2"
+    ],
+    "units": [
+     "µg"
+    ],
+    "citations": [
+     "[3]"
+    ],
+    "figures": [
+     "Fig. 2)"
+    ],
+    "hedges": [],
+    "negation": []
+   }
+  },
+  {
+   "id": "p01.s05",
+   "paragraph": 1,
+   "original": "Samples did not require pretreatment, and the assay can be finished in 12 min.",
+   "protected": {
+    "numbers": [
+     "12"
+    ],
+    "units": [
+     "min"
+    ],
+    "citations": [],
+    "figures": [],
+    "hedges": [
+     "can"
+    ],
+    "negation": [
+     "not"
+    ]
+   }
+  },
+  {
+   "id": "p01.s06",
+   "paragraph": 1,
+   "original": "This may suggest that the method could be applied in resource-limited settings, although field validation is still needed.",
+   "protected": {
+    "numbers": [],
+    "units": [],
+    "citations": [],
+    "figures": [],
+    "hedges": [
+     "may",
+     "could",
+     "suggest"
+    ],
+    "negation": []
+   }
+  }
+ ]
+}

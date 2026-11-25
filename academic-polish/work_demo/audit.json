@@ -1,0 +1,19 @@
+{
+ "units_total": 6,
+ "units_revised": 6,
+ "missing_units": [],
+ "blocking": {},
+ "warnings": {},
+ "blocking_count": 0,
+ "warning_count": 0,
+ "hedging": {
+  "original": 4,
+  "revised": 4,
+  "preserved": true
+ },
+ "term_consistency": {
+  "rate": 1.0,
+  "hits": 3
+ },
+ "ok": true
+}

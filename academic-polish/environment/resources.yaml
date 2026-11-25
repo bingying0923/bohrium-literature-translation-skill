@@ -1,0 +1,51 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：触发条件、6 步流程、守恒约束、输出契约、异常处置
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口，列出随包文件
+  - path: rules/style_guide.md
+    kind: rule
+    description: 按文体（期刊/学位论文/基金/审稿回复）的语域与句式规则，含禁止清单
+  - path: rules/hedging_lexicon.csv
+    kind: rule
+    description: 限定词强度表（weak/medium），用于限定强度守恒核查
+  - path: rules/edit_taxonomy.md
+    kind: rule
+    description: 修改类型定义、判定口径与风险等级
+  - path: scripts/segment_sentences.py
+    kind: script
+    runtime: python3
+    description: 分段/分句并识别保护块（公式、引用、图表编号、URL、DOI）
+  - path: scripts/build_terms.py
+    kind: script
+    runtime: python3
+    description: 术语候选抽取与既有术语表合并
+  - path: scripts/audit_edits.py
+    kind: script
+    runtime: python3
+    description: 逐句核查数字/单位/引用/图表/否定/限定词/术语是否被改坏
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 生成 result.json、polished.md、changes.csv（含 difflib 修改类型推断）
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: templates/terms_template.csv
+    kind: template
+    description: 术语表模板（term,preferred,locked,count,first_unit,note）
+  - path: examples/demo_input.md
+    kind: example
+    description: 最小示例输入（自拟摘要，非正式案例）
+  - path: examples/demo_revised.json
+    kind: example
+    description: 最小示例的逐句改文（示意）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

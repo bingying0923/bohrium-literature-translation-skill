@@ -1,0 +1,106 @@
+{
+ "body": "# 饮用水中铅离子的便携式检测\n\n饮用水中铅污染仍然是许多地区的公共卫生问题 [3]。便携式光学传感器可能支持缺乏实验室条件的现场筛查 [1]，比色法已被用于水质快检 [2]。近期工作把该方法推进到现场验证 [4-5]。\n",
+ "reference_block": "\n[1] Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1\n[2] Wang L, Zhang Y. \"Portable optical sensors for water quality monitoring\". Analytical Chemistry 2019.\n[3] Chen H. \"Lead in drinking water: a review of exposure pathways\". Environmental Science 2021.\n[4] Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1\n[5] Garcia M. \"Field validation of paper-based sensors\". Lab on a Chip 2022.\n[6] Nobody A. \"A paper that is never cited\". Journal of Irrelevance 2018.\n",
+ "citations": [
+  {
+   "anchor": "p002",
+   "raw": "[3]",
+   "numbers": [
+    3
+   ],
+   "style": "numeric"
+  },
+  {
+   "anchor": "p002",
+   "raw": "[1]",
+   "numbers": [
+    1
+   ],
+   "style": "numeric"
+  },
+  {
+   "anchor": "p002",
+   "raw": "[2]",
+   "numbers": [
+    2
+   ],
+   "style": "numeric"
+  },
+  {
+   "anchor": "p002",
+   "raw": "[4-5]",
+   "numbers": [
+    4,
+    5
+   ],
+   "style": "numeric"
+  }
+ ],
+ "entries": [
+  {
+   "index": 1,
+   "raw": "Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "year": "2020",
+   "doi": "10.1000/abc1",
+   "title": "A colorimetric sensor for lead detection",
+   "authors": "Smith J, Lee K",
+   "venue": "\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "key": "10.1000/abc1"
+  },
+  {
+   "index": 2,
+   "raw": "Wang L, Zhang Y. \"Portable optical sensors for water quality monitoring\". Analytical Chemistry 2019.",
+   "year": "2019",
+   "doi": "",
+   "title": "Portable optical sensors for water quality monitoring",
+   "authors": "Wang L, Zhang Y",
+   "venue": "\". Analytical Chemistry 2019",
+   "key": "portableopticalsensorsforwaterqualitymonitoring"
+  },
+  {
+   "index": 3,
+   "raw": "Chen H. \"Lead in drinking water: a review of exposure pathways\". Environmental Science 2021.",
+   "year": "2021",
+   "doi": "",
+   "title": "Lead in drinking water: a review of exposure pathways",
+   "authors": "Chen H",
+   "venue": "\". Environmental Science 2021",
+   "key": "leadindrinkingwaterareviewofexposurepathways"
+  },
+  {
+   "index": 4,
+   "raw": "Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "year": "2020",
+   "doi": "10.1000/abc1",
+   "title": "A colorimetric sensor for lead detection",
+   "authors": "Smith J, Lee K",
+   "venue": "\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "key": "10.1000/abc1"
+  },
+  {
+   "index": 5,
+   "raw": "Garcia M. \"Field validation of paper-based sensors\". Lab on a Chip 2022.",
+   "year": "2022",
+   "doi": "",
+   "title": "Field validation of paper-based sensors",
+   "authors": "Garcia M",
+   "venue": "\". Lab on a Chip 2022",
+   "key": "fieldvalidationofpaperbasedsensors"
+  },
+  {
+   "index": 6,
+   "raw": "Nobody A. \"A paper that is never cited\". Journal of Irrelevance 2018.",
+   "year": "2018",
+   "doi": "",
+   "title": "A paper that is never cited",
+   "authors": "Nobody A",
+   "venue": "\". Journal of Irrelevance 2018",
+   "key": "apaperthatisnevercited"
+  }
+ ],
+ "list_style": "numeric",
+ "stats": {
+  "citations": 4,
+  "entries": 6
+ }
+}

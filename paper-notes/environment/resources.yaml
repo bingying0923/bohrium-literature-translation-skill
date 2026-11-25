@@ -1,0 +1,45 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：章节对齐笔记流程、字段字典、质量核查、输出契约
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/field_schema.md
+    kind: rule
+    description: 论文卡片 7 个字段的判定口径与锚点约定
+  - path: rules/note_style.md
+    kind: rule
+    description: 笔记写法、锚点格式、覆盖要求与禁止项
+  - path: scripts/segment_sections.py
+    kind: script
+    runtime: python3
+    description: 章节切分 + 段落锚点（剔除页眉页脚与纯页码）
+  - path: scripts/extract_fields.py
+    kind: script
+    runtime: python3
+    description: 论文卡片字段抽取，每字段带锚点，缺失标 not_reported
+  - path: scripts/check_notes.py
+    kind: script
+    runtime: python3
+    description: 覆盖度/锚点/数字溯源/新增事实/局限字段 五项核查
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json + notes.md + paper_card.json
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_input.md
+    kind: example
+    description: 最小示例输入（自拟论文片段，非正式案例）
+  - path: examples/demo_notes.json
+    kind: example
+    description: 最小示例的手写笔记（示意）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []

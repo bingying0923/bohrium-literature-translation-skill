@@ -1,0 +1,25 @@
+Journal of Sensors and Actuators 2026                            Preprint   1
+
+Abstract  We report a low-cost colorimetric sensor for lead quantification   Lead ions are captured on a chelating membrane
+The sensing principle relies on a colour change that is read by a phone camera   The colour change is quantified with a calibration curve
+Samples are filtered and passed through the membrane before imaging   Recovery is evaluated on spiked tap water
+We test the sensor on water samples collected in three cities   The limit of detection is 0.8 µg/L
+Each assay takes about twelve minutes to complete   Field deployment is only discussed as future work
+
+[page 2]
+
+Journal of Sensors and Actuators 2026                            Preprint   2
+
+1 Introduction
+Lead contamination of drinking water remains a public health problem in many regions. Portable sensors may enable screening where laboratory facilities are unavailable.
+2 Methods
+We collected 36 water samples from three cities between March and June 2024. Samples were filtered and passed through a chelating membrane.
+The calibration curve was fitted with a linear model, and the limit of detection was calculated as three times the standard deviation of blank measurements.
+3 Results
+Compound      Recovery (%)   RSD (%)
+Tap water     92             4.1
+River water   104            5.2
+Lake water    108            6.0
+Recovery from spiked samples ranged from 92% to 108%. The limit of detection of 0.8 µg/L is lower than values reported previously (Fig. 2).
+The calibration slope was stable across the three batches, as described in Eq. (1).
+Figure 2. Calibration curve obtained with the smartphone camera.

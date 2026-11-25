@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "paper-notes-section-aligned result.json",
+  "type": "object",
+  "required": ["case_id", "status", "paper", "card", "notes", "coverage", "checks", "unresolved"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "paper": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "pages": {"type": "integer"},
+        "sections": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "card": {
+      "type": "object",
+      "properties": {
+        "research_question": {"$ref": "#/$defs/field"},
+        "data": {"$ref": "#/$defs/field"},
+        "methods": {"$ref": "#/$defs/field"},
+        "limitations": {"$ref": "#/$defs/field"},
+        "novelty": {"$ref": "#/$defs/field"},
+        "key_findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "string"},
+              "anchors": {"type": "array", "items": {"type": "string"}},
+              "numbers": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "terms": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["section", "anchor", "text"],
+        "properties": {
+          "section": {"type": "string"},
+          "anchor": {"type": "string", "pattern": "^p[0-9]{3,}$"},
+          "page": {"type": "integer"},
+          "text": {"type": "string"},
+          "kind": {"enum": ["question", "method", "data", "result", "claim", "limitation", "novelty"]}
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "sections_total": {"type": "integer"},
+        "sections_covered": {"type": "integer"},
+        "missing": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "anchors": {"$ref": "#/$defs/check"},
+        "numbers": {"$ref": "#/$defs/check"},
+        "no_new_facts": {"$ref": "#/$defs/check"},
+        "limitations": {"$ref": "#/$defs/check"}
+      }
+    },
+    "unresolved": {"type": "array", "items": {"type": "object"}},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  },
+  "$defs": {
+    "field": {
+      "type": "object",
+      "properties": {
+        "value": {"type": "string"},
+        "anchors": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["reported", "not_reported"]}
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": ["ok"],
+      "properties": {"ok": {"type": "boolean"}, "issues": {"type": "array"}}
+    }
+  }
+}

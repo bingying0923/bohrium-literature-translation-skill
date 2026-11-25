@@ -1,0 +1,134 @@
+{
+ "case_id": "demo-cite-001",
+ "status": "partial",
+ "style": "numeric",
+ "manuscript": {
+  "body": "# 饮用水中铅离子的便携式检测\n\n饮用水中铅污染仍然是许多地区的公共卫生问题 [1]。便携式光学传感器可能支持缺乏实验室条件的现场筛查 [2]，比色法已被用于水质快检 [3]。近期工作把该方法推进到现场验证 [2,4]。\n",
+  "citations_in_text": 4,
+  "references": 5
+ },
+ "references": [
+  {
+   "index": 1,
+   "raw": "Chen H. \"Lead in drinking water: a review of exposure pathways\". Environmental Science 2021.",
+   "year": "2021",
+   "doi": "",
+   "title": "Lead in drinking water: a review of exposure pathways",
+   "authors": "Chen H",
+   "venue": "\". Environmental Science 2021",
+   "key": "leadindrinkingwaterareviewofexposurepathways",
+   "old_index": 3
+  },
+  {
+   "index": 2,
+   "raw": "Smith J, Lee K. \"A colorimetric sensor for lead detection\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "year": "2020",
+   "doi": "10.1000/abc1",
+   "title": "A colorimetric sensor for lead detection",
+   "authors": "Smith J, Lee K",
+   "venue": "\". Sensors and Actuators B 2020. doi:10.1000/abc1",
+   "key": "10.1000/abc1",
+   "old_index": 1
+  },
+  {
+   "index": 3,
+   "raw": "Wang L, Zhang Y. \"Portable optical sensors for water quality monitoring\". Analytical Chemistry 2019.",
+   "year": "2019",
+   "doi": "",
+   "title": "Portable optical sensors for water quality monitoring",
+   "authors": "Wang L, Zhang Y",
+   "venue": "\". Analytical Chemistry 2019",
+   "key": "portableopticalsensorsforwaterqualitymonitoring",
+   "old_index": 2
+  },
+  {
+   "index": 4,
+   "raw": "Garcia M. \"Field validation of paper-based sensors\". Lab on a Chip 2022.",
+   "year": "2022",
+   "doi": "",
+   "title": "Field validation of paper-based sensors",
+   "authors": "Garcia M",
+   "venue": "\". Lab on a Chip 2022",
+   "key": "fieldvalidationofpaperbasedsensors",
+   "old_index": 5
+  },
+  {
+   "index": 5,
+   "raw": "Nobody A. \"A paper that is never cited\". Journal of Irrelevance 2018.",
+   "year": "2018",
+   "doi": "",
+   "title": "A paper that is never cited",
+   "authors": "Nobody A",
+   "venue": "\". Journal of Irrelevance 2018",
+   "key": "apaperthatisnevercited",
+   "old_index": 6
+  }
+ ],
+ "audit": {
+  "missing_references": [],
+  "uncited_references": [
+   6
+  ],
+  "numbering_gaps": [],
+  "order_of_appearance_ok": false,
+  "first_appearance_order": [
+   3,
+   1,
+   2,
+   4,
+   5
+  ],
+  "duplicates": [
+   {
+    "key": "10.1000/abc1",
+    "indices": [
+     1,
+     4
+    ]
+   }
+  ],
+  "incomplete_entries": [],
+  "style_mixed": {
+   "numeric_in_author_year": [],
+   "author_year_in_numeric": []
+  }
+ },
+ "changes": {
+  "renumber_mapping": {
+   "1": 2,
+   "2": 3,
+   "3": 1,
+   "4": 2,
+   "5": 4,
+   "6": 5
+  },
+  "merged_duplicates": {
+   "4": 1
+  },
+  "markers_updated": 4
+ },
+ "todo": [
+  {
+   "issue": "文末第 6 条在正文中未被引用",
+   "suggested_action": "在合适论断处补引，或从列表删除"
+  },
+  {
+   "issue": "疑似重复条目 [1, 4]（key=10.1000/abc1）",
+   "suggested_action": "保留信息最全的一条，正文编号合并"
+  }
+ ],
+ "artifacts": [
+  {
+   "path": "manuscript.md",
+   "kind": "markdown"
+  },
+  {
+   "path": "references.json",
+   "kind": "json"
+  },
+  {
+   "path": "citation_changes.csv",
+   "kind": "csv"
+  }
+ ]
+}

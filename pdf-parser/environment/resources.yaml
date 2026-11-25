@@ -1,0 +1,42 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：取版面文本、去页眉页脚、双栏重排、表格抽取、结构与产物
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口
+  - path: rules/layout_rules.md
+    kind: rule
+    description: 版面判定口径：栏数、页眉页脚、表格对齐、合并单元格与续表
+  - path: scripts/fix_layout.py
+    kind: script
+    runtime: python3
+    description: 页眉页脚剔除 + 逐页双栏判定与重排 + 块锚点 bNNNN
+  - path: scripts/extract_tables.py
+    kind: script
+    runtime: python3
+    description: 对齐表格识别并转 Markdown，列数不一致给合并单元格告警
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 章节树、题注、公式定位，合成 result.json + document.md
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 结构定义
+  - path: examples/demo_layout.txt
+    kind: example
+    description: 最小示例的版面文本（双栏首页 + 单栏表格页，自拟）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小示例输出（示意，不是正式答案）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []
+  external_tools:
+    - name: pdftotext
+      optional: true
+      note: 有文字层时优先；缺失则用平台 pdf-text-tool
+    - name: ocr
+      optional: true
+      note: 无文字层时使用平台 ocr-tool

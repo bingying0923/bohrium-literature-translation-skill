@@ -1,0 +1,26 @@
+hedge,strength,note
+may,medium,允许可能性
+might,medium,较弱可能性
+could,medium,能力/可能性
+would,medium,条件性
+suggest,medium,证据支持但不证明
+indicate,medium,指向但不确证
+appear,weak,表观
+tend,weak,趋势
+likely,medium,概率较高
+unlikely,medium,概率较低
+possibly,weak,弱可能
+probably,medium,较强可能
+potentially,weak,潜在
+partly,weak,部分
+partially,weak,部分
+in part,weak,部分
+somewhat,weak,程度限定
+relatively,weak,相对
+approximately,weak,数值限定
+about,weak,数值限定
+around,weak,数值限定
+seem,weak,表观
+assume,medium,假设
+hypothesize,medium,假设
+propose,medium,提出

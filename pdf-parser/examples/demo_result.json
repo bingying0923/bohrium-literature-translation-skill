@@ -1,0 +1,147 @@
+{
+ "case_id": "unknown",
+ "status": "success",
+ "document": {
+  "title": "demo_layout.txt",
+  "pages": 2,
+  "columns": 2,
+  "source_file": "demo_layout.txt"
+ },
+ "structure": [
+  {
+   "name": "Front Matter",
+   "page": 1,
+   "anchor": "b0001",
+   "blocks": 4
+  },
+  {
+   "name": "1 Introduction",
+   "page": 2,
+   "anchor": "b0005",
+   "blocks": 1
+  },
+  {
+   "name": "2 Methods",
+   "page": 2,
+   "anchor": "b0007",
+   "blocks": 1
+  },
+  {
+   "name": "3 Results",
+   "page": 2,
+   "anchor": "b0009",
+   "blocks": 2
+  }
+ ],
+ "sections": [
+  {
+   "name": "Front Matter",
+   "page": 1,
+   "anchor": "b0001",
+   "blocks": [
+    {
+     "anchor": "b0001",
+     "type": "text",
+     "text": "Journal of Sensors and Actuators 2026"
+    },
+    {
+     "anchor": "b0002",
+     "type": "text",
+     "text": "Abstract  We report a low-cost colorimetric sensor for lead quantification The sensing principle relies on a colour change that is read by a phone camera Samples are filtered and passed through the membrane before imaging We test the sensor on water samples collected in three cities Each assay takes about twelve minutes to complete"
+    },
+    {
+     "anchor": "b0003",
+     "type": "text",
+     "text": "Preprint 1 Lead ions are captured on a chelating membrane The colour change is quantified with a calibration curve Recovery is evaluated on spiked tap water The limit of detection is 0.8 µg/L Field deployment is only discussed as future work"
+    },
+    {
+     "anchor": "b0004",
+     "type": "text",
+     "text": "Journal of Sensors and Actuators 2026                            Preprint   2"
+    }
+   ]
+  },
+  {
+   "name": "1 Introduction",
+   "page": 2,
+   "anchor": "b0005",
+   "blocks": [
+    {
+     "anchor": "b0006",
+     "type": "text",
+     "text": "Lead contamination of drinking water remains a public health problem in many regions. Portable sensors may enable screening where laboratory facilities are unavailable."
+    }
+   ]
+  },
+  {
+   "name": "2 Methods",
+   "page": 2,
+   "anchor": "b0007",
+   "blocks": [
+    {
+     "anchor": "b0008",
+     "type": "text",
+     "text": "We collected 36 water samples from three cities between March and June 2024. Samples were filtered and passed through a chelating membrane. The calibration curve was fitted with a linear model, and the limit of detection was calculated as three times the standard deviation of blank measurements."
+    }
+   ]
+  },
+  {
+   "name": "3 Results",
+   "page": 2,
+   "anchor": "b0009",
+   "blocks": [
+    {
+     "anchor": "b0010",
+     "type": "text",
+     "text": "Compound      Recovery (%)   RSD (%) Tap water     92             4.1 River water   104            5.2 Lake water    108            6.0 Recovery from spiked samples ranged from 92% to 108%. The limit of detection of 0.8 µg/L is lower than values reported previously (Fig. 2). The calibration slope was stable across the three batches, as described in Eq. (1)."
+    },
+    {
+     "anchor": "b0011",
+     "type": "caption",
+     "text": "Figure 2. Calibration curve obtained with the smartphone camera."
+    }
+   ]
+  }
+ ],
+ "tables": [
+  {
+   "id": "t001",
+   "page": 2,
+   "rows": 4,
+   "cols": 3,
+   "markdown": "| Compound | Recovery (%) | RSD (%) |\n|---|---|---|\n| Tap water | 92 | 4.1 |\n| River water | 104 | 5.2 |\n| Lake water | 108 | 6.0 |",
+   "source_start_line": 10
+  }
+ ],
+ "figures": [
+  {
+   "anchor": "b0011",
+   "page": 2,
+   "caption": "Figure 2. Calibration curve obtained with the smartphone camera."
+  }
+ ],
+ "formulas": [
+  {
+   "anchor": "b0010",
+   "page": 2,
+   "raw": "Compound      Recovery (%)   RSD (%) Tap water     92             4.1 River water   104            5.2 Lake water    108            6.0 Recovery from spiked samples ranged from 92% to 108%. The limit "
+  }
+ ],
+ "quality": {
+  "pages": 2,
+  "columns_detected": 2,
+  "blocks": 11,
+  "sections": 4,
+  "tables": 1,
+  "figures": 1,
+  "formulas": 1,
+  "warnings": []
+ },
+ "issues": [],
+ "artifacts": [
+  {
+   "path": "document.md",
+   "kind": "markdown"
+  }
+ ]
+}

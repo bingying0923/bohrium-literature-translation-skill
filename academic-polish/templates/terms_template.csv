@@ -1,0 +1,4 @@
+term,preferred,locked,count,first_unit,note
+detection limit,limit of detection,true,1,p01.s04,统一写法
+easy-to-use,easy to use,true,1,p01.s02,连字符统一
+limit of detection (LOD),LOD,true,1,p01.s05,首次出现给全称后统一缩写

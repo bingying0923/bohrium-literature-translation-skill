@@ -1,0 +1,40 @@
+{
+ "issues": {
+  "missing_references": [],
+  "uncited_references": [
+   6
+  ],
+  "numbering_gaps": [],
+  "order_of_appearance_ok": false,
+  "first_appearance_order": [
+   3,
+   1,
+   2,
+   4,
+   5
+  ],
+  "duplicates": [
+   {
+    "key": "10.1000/abc1",
+    "indices": [
+     1,
+     4
+    ]
+   }
+  ],
+  "incomplete_entries": [],
+  "style_mixed": {
+   "numeric_in_author_year": [],
+   "author_year_in_numeric": []
+  }
+ },
+ "blocking": 2,
+ "ok": false,
+ "counts": {
+  "cited": 5,
+  "entries": 6,
+  "duplicates": 1,
+  "missing": 0,
+  "uncited": 1
+ }
+}
