@@ -1,0 +1,9 @@
+term,translation,locked,count,first_segment,first_page,context,note
+microfluidic platform,微流控平台,true,2,p002,1,"We present a microfluidic platform for rapid detection","示例条目, 非正式答案"
+lead ions,铅离子,true,1,p002,1,"rapid detection of lead ions in drinking water","示例条目"
+limit of detection,检出限,true,1,p002,1,"achieves a limit of detection of 0.8 µg/L","示例条目"
+sample pretreatment,样品前处理,true,1,p002,1,"does not require sample pretreatment","示例条目"
+colorimetric assays,比色法,true,1,p002,1,"Unlike previous colorimetric assays","示例条目"
+chelating membrane,螯合膜,true,1,p005,2,"driven through a chelating membrane","示例条目"
+matrix interference,基质干扰,true,1,p004,2,"suffer from limited shelf life and matrix interference","示例条目"
+shelf life,货架期,true,1,p004,2,"limited shelf life","示例条目"

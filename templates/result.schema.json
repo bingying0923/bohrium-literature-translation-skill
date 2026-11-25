@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "literature-translation-bilingual result.json",
+  "type": "object",
+  "required": ["case_id", "status", "language", "document", "glossary", "segments", "checks", "untranslated", "uncertainties"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["success", "partial", "failed", "stuck"]},
+    "language": {
+      "type": "object",
+      "required": ["source", "target"],
+      "properties": {"source": {"type": "string"}, "target": {"type": "string"}}
+    },
+    "document": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "pages": {"type": "integer"},
+        "source_file": {"type": "string"},
+        "has_text_layer": {"type": "boolean"}
+      }
+    },
+    "glossary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "translation"],
+        "properties": {
+          "term": {"type": "string"},
+          "translation": {"type": "string"},
+          "locked": {"type": "boolean"},
+          "note": {"type": "string"},
+          "occurrences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {"segment_id": {"type": "string"}, "page": {"type": ["integer", "null"]}}
+            }
+          }
+        }
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "translation"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^p[0-9]{3,}$"},
+          "section": {"type": "string"},
+          "page": {"type": ["integer", "null"]},
+          "source": {"type": "string"},
+          "translation": {"type": "string"},
+          "terms": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"enum": ["high", "medium", "low"]},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "numbers": {"$ref": "#/$defs/check"},
+        "units": {"$ref": "#/$defs/check"},
+        "citations": {"$ref": "#/$defs/check"},
+        "formulas": {"$ref": "#/$defs/check"},
+        "figures_tables": {"$ref": "#/$defs/check"},
+        "negation": {"$ref": "#/$defs/check"},
+        "term_consistency": {
+          "type": "object",
+          "properties": {
+            "rate": {"type": "number", "minimum": 0, "maximum": 1},
+            "violations": {"type": "array", "items": {"type": "object"}}
+          }
+        }
+      }
+    },
+    "untranslated": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["segment_id", "reason"],
+        "properties": {"segment_id": {"type": "string"}, "reason": {"type": "string"}}
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "segment_id": {"type": "string"},
+          "issue": {"type": "string"},
+          "why": {"type": "string"},
+          "suggested_action": {"type": "string"}
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"path": {"type": "string"}, "kind": {"type": "string"}}
+      }
+    },
+    "run": {"type": "object"}
+  },
+  "$defs": {
+    "check": {
+      "type": "object",
+      "required": ["ok"],
+      "properties": {
+        "ok": {"type": "boolean"},
+        "issues": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  }
+}

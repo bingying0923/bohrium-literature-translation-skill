@@ -1,0 +1,35 @@
+{
+ "numbers": {
+  "ok": true,
+  "issues": []
+ },
+ "units": {
+  "ok": true,
+  "issues": []
+ },
+ "citations": {
+  "ok": true,
+  "issues": []
+ },
+ "formulas": {
+  "ok": true,
+  "issues": []
+ },
+ "figures_tables": {
+  "ok": true,
+  "issues": []
+ },
+ "negation": {
+  "ok": true,
+  "issues": []
+ },
+ "term_consistency": {
+  "rate": 1.0,
+  "violations": []
+ },
+ "coverage": {
+  "segments_total": 5,
+  "segments_translated": 5,
+  "missing": []
+ }
+}

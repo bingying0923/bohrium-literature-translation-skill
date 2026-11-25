@@ -1,0 +1,58 @@
+resources:
+  - path: SKILL.md
+    kind: skill
+    description: 技能本体：触发条件、六步流程、输出契约、异常处置与自检清单
+  - path: environment/resources.yaml
+    kind: manifest
+    description: 资源入口，列出随包文件（相对本文件所在目录）
+  - path: scripts/segment_text.py
+    kind: script
+    runtime: python3
+    description: 把提取出的论文文本切成带段号/页码/章节的段落，输出 segments.json
+  - path: scripts/build_glossary.py
+    kind: script
+    runtime: python3
+    description: 抽取术语候选、合并既有术语表、输出可锁定的 glossary.csv
+  - path: scripts/check_translation.py
+    kind: script
+    runtime: python3
+    description: 核验数字/单位/引用/公式/图表编号/否定/术语一致率，输出 checks.json
+  - path: scripts/make_result.py
+    kind: script
+    runtime: python3
+    description: 合成 result.json、bilingual.md、glossary.csv
+  - path: templates/result.schema.json
+    kind: template
+    description: result.json 的结构定义（JSON Schema 2020-12）
+  - path: templates/glossary_template.csv
+    kind: template
+    description: 术语表模板（term,translation,locked,count,first_segment,first_page,context,note）
+  - path: examples/demo_input.md
+    kind: example
+    description: 最小调用示例的输入（自拟英文摘要，非正式案例）
+  - path: examples/demo_glossary.csv
+    kind: example
+    description: 最小调用示例的术语表
+  - path: examples/demo_translations.json
+    kind: example
+    description: 最小调用示例的译文（示意，不是正式案例结果）
+  - path: examples/demo_result.json
+    kind: example
+    description: 最小调用示例的 result.json 输出（示意）
+
+dependencies:
+  python: ">=3.8"
+  third_party: []
+  external_tools:
+    - name: pdftotext
+      optional: true
+      note: 有文字层时优先使用；没有则用平台 pdf-text-tool，仍失败再 OCR
+    - name: ocr
+      optional: true
+      note: 扫描件/图片型 PDF 时使用平台 ocr-tool
+
+limits:
+  resource_files_max: 50
+  single_file_max_bytes: 512000
+  total_max_bytes: 2097152
+  symlinks: false

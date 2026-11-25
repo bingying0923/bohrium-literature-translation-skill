@@ -1,0 +1,225 @@
+{
+ "case_id": "demo-example-001",
+ "status": "success",
+ "language": {
+  "source": "en",
+  "target": "zh"
+ },
+ "document": {
+  "title": "Demo abstract (synthetic)",
+  "pages": 2,
+  "source_file": "demo_input.md",
+  "has_text_layer": true
+ },
+ "glossary": [
+  {
+   "term": "microfluidic platform",
+   "translation": "微流控平台",
+   "locked": true,
+   "note": "示例条目, 非正式答案",
+   "occurrences": [
+    {
+     "segment_id": "p002",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "term": "lead ions",
+   "translation": "铅离子",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p002",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "term": "limit of detection",
+   "translation": "检出限",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p002",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "term": "sample pretreatment",
+   "translation": "样品前处理",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p002",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "term": "colorimetric assays",
+   "translation": "比色法",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p002",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "term": "chelating membrane",
+   "translation": "螯合膜",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p005",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "term": "matrix interference",
+   "translation": "基质干扰",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p004",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "term": "shelf life",
+   "translation": "货架期",
+   "locked": true,
+   "note": "示例条目",
+   "occurrences": [
+    {
+     "segment_id": "p004",
+     "page": 2
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "id": "p001",
+   "section": "Abstract",
+   "page": 1,
+   "source": "Abstract",
+   "translation": "摘要",
+   "terms": [],
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "p002",
+   "section": "Abstract",
+   "page": 1,
+   "source": "We present a microfluidic platform for rapid detection of lead ions in drinking water. The sensor achieves a limit of detection of 0.8 µg/L within 12 min, which is lower than the WHO guideline of 10 µg/L [1]. Unlike previous colorimetric assays, our method does not require sample pretreatment and remains stable at 4 °C for 30 days (Fig. 1). These results suggest that the platform may be suitable for field deployment in resource-limited settings.",
+   "translation": "我们提出了一种用于快速检测饮用水中铅离子的微流控平台。该传感器在 12 min 内达到 0.8 µg/L 的检出限，低于世界卫生组织（WHO）10 µg/L 的指导值 [1]。与以往的比色法不同，本方法无需样品前处理，并在 4 °C 下 30 天内保持稳定（图 1）。这些结果表明，该平台可能适用于资源有限场景下的现场部署。",
+   "terms": [
+    "microfluidic platform",
+    "lead ions",
+    "limit of detection",
+    "sample pretreatment",
+    "colorimetric assays"
+   ],
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "p003",
+   "section": "Introduction",
+   "page": 2,
+   "source": "1 Introduction",
+   "translation": "1 引言",
+   "terms": [],
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "p004",
+   "section": "Introduction",
+   "page": 2,
+   "source": "Heavy metal contamination of drinking water is a persistent public health problem [2]. Conventional laboratory methods such as ICP-MS provide excellent sensitivity, but they require centralized facilities and trained operators. Portable optical sensors have therefore attracted attention, although most reported devices still suffer from limited shelf life and matrix interference.",
+   "translation": "饮用水中的重金属污染是一个长期存在的公共卫生问题 [2]。ICP-MS 等传统实验室方法具有优异的灵敏度，但需要集中式设施和经过培训的操作人员。因此，便携式光学传感器受到关注，不过已报道的大多数器件仍受限于货架期短和基质干扰。",
+   "terms": [
+    "matrix interference",
+    "shelf life"
+   ],
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "p005",
+   "section": "Caption",
+   "page": 2,
+   "source": "Figure 1. Schematic of the microfluidic platform. The sample is driven through a chelating membrane, and the color change is recorded by a smartphone camera.",
+   "translation": "图 1. 微流控平台示意图。样品被驱动通过螯合膜，颜色变化由智能手机摄像头记录。",
+   "terms": [
+    "microfluidic platform",
+    "chelating membrane"
+   ],
+   "confidence": "high",
+   "note": ""
+  }
+ ],
+ "checks": {
+  "numbers": {
+   "ok": true,
+   "issues": []
+  },
+  "units": {
+   "ok": true,
+   "issues": []
+  },
+  "citations": {
+   "ok": true,
+   "issues": []
+  },
+  "formulas": {
+   "ok": true,
+   "issues": []
+  },
+  "figures_tables": {
+   "ok": true,
+   "issues": []
+  },
+  "negation": {
+   "ok": true,
+   "issues": []
+  },
+  "term_consistency": {
+   "rate": 1.0,
+   "violations": []
+  }
+ },
+ "untranslated": [],
+ "uncertainties": [],
+ "artifacts": [
+  {
+   "path": "bilingual.md",
+   "kind": "markdown"
+  },
+  {
+   "path": "glossary.csv",
+   "kind": "csv"
+  }
+ ],
+ "run": {
+  "tool_versions": {
+   "python": "3.12.14"
+  },
+  "notes": "generated by literature-translation-bilingual skill",
+  "generated_at": "2026-11-25T09:36:56+00:00"
+ }
+}
